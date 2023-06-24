@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: hsl(233, 47%, 7%);
+      font-family: 'Inter', sans-serif;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: hsl(244, 38%, 16%);
+    }
+
+
+    .image {
+      background-color: hsl(277, 64%, 61%);
+      background-image: url(images/image-header-desktop.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 540px;
+      height: 446px;
+      background-blend-mode: multiply;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+      width: 22rem;
+    }
+
+    .header-text {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .purple-text {
+      color: hsl(277, 64%, 61%);
+    }
+
+    .description-text {
+      font-size: 0.9rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+      line-height: 1.5rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    .content-statistics {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .statistic {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+    }
+
+    .statistic-header {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .statistic-description {
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image"></div>
+    <div class="content-container">
+      <div class="content">
+        <p class="header-text">Get <span class="purple-text">insights</span> that help your business grow.</p>
+
+        <p class="description-text">Discover the benefits of data analytics and make better decisions regarding revenue,
+          customer
+          experience, and overall efficiency.</p>
+      </div>
+      <div class="content-statistics">
+        <div class="statistic"><span class="statistic-header">10k+</span> <span
+            class="statistic-description">companies</span></div>
+        <div class="statistic"><span class="statistic-header">314 </span> <span
+            class="statistic-description">templates</span></div>
+        <div class="statistic"><span class="statistic-header">12m+</span> <span class="statistic-description">
+            queries</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
